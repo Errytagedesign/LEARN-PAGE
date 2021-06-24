@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap');
+:root {
+  /* previous color */
+  /* --stocka-main: #00b200; */
+
+  /* current color */
+  --stocka-main: #1b8381;
+
+  /* pakistan green, proposed color */
+  /* --stocka-main: #006600; */
+
+  --color-one: #fff;
+  --button-hover: #146866;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+}
+.left-main,
+.right-main {
+  padding: 1em;
+}
+.left-main {
+  background-color: var(--stocka-main);
+  color: var(--color-one);
+}
+.left-content {
+  padding: 0 3em;
+}
+.back-arrow-icon {
+  font-size: 24px;
+  position: relative;
+  left: -20px;
+}
+.welcome h1 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.welcome p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.mobile-logo {
+  display: none;
+}
+.right-main {
+  background-color: var(--color-one);
+}
+.right-content,
+.top-right {
+  padding: 0 3em;
+}
+.sign-in-text {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+}
+#username,
+#password {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid #000;
+}
+#password {
+  border: none;
+}
+#username::placeholder,
+#password::placeholder {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(128, 128, 128, 0.5);
+}
+#username:focus,
+#password:focus {
+  outline: none;
+}
+.pass-wrap {
+  border-bottom: 1px solid #000;
+}
+.toggle-pass {
+  padding: 2px 5px 0 5px;
+  border-radius: 50%;
+  transition: 150ms;
+}
+.toggle-pass:hover {
+  background-color: rgba(100, 100, 100, 0.2);
+}
+.remember {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b7b7b7;
+}
+.btn-wrap button {
+  padding: 6px 0;
+  border: none;
+  color: var(--color-one);
+  border-radius: 15px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--stocka-main);
+  font-family: Roboto;
+  font-weight: 700;
+  width: 75%;
+}
+.btn-wrap button:hover {
+  color: var(--color-one);
+  background-color: var(--button-hover);
+}
+.btn-wrap button:focus {
+  outline: none;
+}
+.forgot-pass a {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9c9090;
+}
+.alt-sign-in h3 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.alt-links {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+}
+.reg {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9c9090;
+}
+.reg a {
+  text-decoration: none;
+  color: var(--stocka-main);
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+/* mobile screens */
+@media (max-width: 769px) {
+  .back-arrow-icon {
+    left: 0px;
+  }
+  .welcome {
+    margin: 3em 0;
+  }
+  .logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .right-content {
+    padding: 0 1em;
+  }
+  .top-right {
+    padding: 0;
+  }
+  .sign-in-text {
+    margin-top: 1em;
+  }
+  .toggle-pass:hover {
+    background-color: inherit;
+  }
+  .btn-wrap button {
+    width: 100%;
+  }
+
+  /* font sizes */
+  .remember,
+  .forgot-pass a,
+  .alt-sign-in h3,
+  .reg,
+  #username::placeholder,
+  #password::placeholder {
+    font-size: 14px;
+  }
+  .welcome p {
+    font-size: 18px;
+  }
+  .back-arrow-icon {
+    font-size: 20px;
+  }
+  .sign-in-text,
+  .welcome h1 {
+    font-size: 24px;
+  }
+  .toggle-pass {
+    font-size: 24px;
+    padding: 2px 7px 0 7px;
+  }
+}
+
+/* large screens */
+@media (min-width: 1023px) {
+  .right-content {
+    padding: 2em 2em 0 2em;
+  }
+
+  /* font sizes */
+  .remember,
+  .forgot-pass a,
+  .alt-sign-in h3,
+  .reg,
+  #username::placeholder,
+  #password::placeholder {
+    font-size: 12px;
+  }
+  .welcome p {
+    font-size: 14px;
+  }
+  .back-arrow-icon {
+    font-size: 20px;
+  }
+  .sign-in-text,
+  .welcome h1 {
+    font-size: 32px;
+  }
+}
+
+/* larger screens*/
+@media (min-width: 1440px) {
+  .right-content {
+    padding: 4em 4em 0 4em;
+  }
+  .top-right {
+    padding: 4em;
+  }
+
+  /* font sizes */
+  .remember,
+  .forgot-pass a,
+  .alt-sign-in h3,
+  .reg,
+  #username::placeholder,
+  #password::placeholder {
+    font-size: 16px;
+  }
+  .welcome p {
+    font-size: 20px;
+  }
+  .back-arrow-icon {
+    font-size: 28px;
+  }
+  .sign-in-text,
+  .welcome h1 {
+    font-size: 48px;
+  }
+}
