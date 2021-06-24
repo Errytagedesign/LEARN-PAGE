@@ -200,8 +200,12 @@ h3 {
     
 }
 
-@media (min-width: 700px) {
 
+
+/* =======CSS rules for ipad ========= */
+@media all and (device-width: 768px) and 
+(device-height: 1024px) and (orientation:portrait) {
+    
 
     .Started,
     .Primer,
@@ -213,10 +217,35 @@ h3 {
     .Stock,
     .Invest {
 
-        height: 80vh;
+        height: 50vh;
         background-size: cover;
     }
+
 }
+
+
+/* =======CSS rules for ipad pro ========= */
+@media all and (device-width: 1024px) and 
+(device-height: 1366px) and (orientation:portrait) {
+    
+
+    .Started,
+    .Primer,
+    .Risk,
+    .Dividend,
+    .Portfolio,
+    .ETF,
+    .Commodity,
+    .Stock,
+    .Invest {
+
+        height: 50vh;
+        background-size: cover;
+    }
+
+}
+
+
 
 @media (min-width: 767px) {
 
@@ -236,26 +265,22 @@ h3 {
 
     h1 {
 
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 500;
     }
     
     h3 {
     
-        font-size: 2.1rem;
+        font-size: 2rem;
         font-weight: 400;
     }
     
 
+
+   
     .Started,
     .Primer,
-    .Risk{
-
-        
-        margin: 0 1em;
-        background-size: 70%;
-    }
-    
+    .Risk,
     .Dividend,
     .Portfolio,
     .ETF,
@@ -264,11 +289,15 @@ h3 {
     .Invest {
 
         margin: 0 1em;
-        background-size: 100%;
+        background-size: 75%;
     }
     
+    .Invest {
+
+        
+        background-size: 70%;
+    }
+
     /* ===========Hero section style====== */
 
 }
-
-
